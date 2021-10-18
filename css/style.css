@@ -1,3 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+}
 
+h1 {
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  border-bottom: 2px gold solid;
+}
 
- 
+.homescreen-pictures {
+  display: flex;
+  width: 50%;
+}
+
+.homescreen-pictures img {
+  width: 100%;
+}
