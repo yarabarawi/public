@@ -5,20 +5,241 @@
 }
 body {
   background: black;
+  overflow-y: hidden;
 }
 
-h1 {
-  color: #fff;
-  font-family: sans-serif;
-  text-align: center;
-  border-bottom: 2px gold solid;
+header h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .homescreen-pictures {
   display: flex;
-  width: 50%;
 }
 
 .homescreen-pictures img {
   width: 100%;
 }
+
+.first-page-text {
+  color: white;
+  grid-column: 3;
+  grid-row: 2;
+  width: 100%;
+}
+
+/* page structure */
+
+.root {
+  display: grid;
+}
+
+nav {
+  width: 70px;
+  height: 100vh;
+  grid-row: 1 / 3;
+  grid-column: 1;
+  border-right: 3px solid orange;
+}
+
+header {
+  width: calc(100vw - 70px);
+  height: 50px;
+  grid-row: 1;
+  grid-column: 2;
+  border-bottom: 3px solid orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: calc(100vw - 70px);
+  height: calc(100vh - 50px);
+  grid-row: 2;
+  grid-column: 2;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.nav-img {
+  width: 100%;
+  height: 50px;
+  border-bottom: 3px solid orange;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 50px);
+  background-color: black;
+}
+
+.nav-list li {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid orange;
+}
+.img-ul {
+  width: 67px;
+  height: 132px;
+}
+span {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.two-by-two-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.two-by-two-grid h2 {
+  color: white;
+  border: 2px white solid;
+  text-align: center;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.header-img {
+  width: 100%;
+  height: 400px;
+  background: url("/public/images/ferrari\ logo.png");
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.kontakt-info {
+  color: white;
+  width: 25%;
+  margin-left: 8%;
+  margin-top: 6%;
+}
+
+.kontakt-form {
+  color: white;
+  margin: auto;
+  text-align: right;
+  margin-top: -343px;
+  margin-right: 140px;
+}
+
+.white-recktangle1 {
+  margin-left: 51.1%;
+  margin-top: 4%;
+  background-color: white;
+  color: black;
+}
+
+.För-namn {
+  color: white;
+  margin-left: 51.1%;
+  margin-top: -4%;
+}
+
+.white-recktangle2 {
+  margin-left: 51.1%;
+  margin-top: 4%;
+  background-color: white;
+  color: black;
+}
+
+.Efter-namn {
+  color: white;
+  margin-left: 51.1%;
+  margin-top: -4%;
+}
+
+.white-recktangle3 {
+  margin-left: 51.1%;
+  margin-top: 4%;
+  background-color: white;
+  color: black;
+}
+
+.Adress {
+  color: white;
+  margin-left: 51.1%;
+  margin-top: -4%;
+}
+
+.white-recktangle4 {
+  margin-left: 51.1%;
+  margin-top: 4%;
+  background-color: white;
+  color: black;
+}
+
+.Telefon-nummer {
+  color: white;
+  margin-left: 51.1%;
+  margin-top: -4%;
+}
+
+.white-recktangle5 {
+  margin-left: 51.1%;
+  margin-top: 4%;
+  background-color: white;
+  color: black;
+}
+
+.Epost-adress {
+  color: white;
+  margin-left: 51.1%;
+  margin-top: -4%;
+}
+
+.white-recktangle6 {
+  margin-left: 51.1%;
+  margin-top: 4%;
+  background-color: white;
+  color: black;
+}
+
+.Ärende {
+  color: white;
+  margin-left: 51.1%;
+  margin-top: -8.1%;
+}
+
+.recktangle {
+  margin-left: 27%;
+  margin-top: 6%;
+  color: white;
+  background-color: white;
+  
+  
+}
+
+.recktangle-privat{
+  margin-left: 34%;
+  margin-top: -19%;
+  color: rgb(109, 109, 109);
+  background-color:rgb(109, 109, 109);
+}
+
+.recktangle-företag{
+  margin-left: 52%;
+  margin-top: -2.55%;
+  color: rgb(109, 109, 109);
+  background-color:rgb(109, 109, 109);
+}
+
+
+
+
